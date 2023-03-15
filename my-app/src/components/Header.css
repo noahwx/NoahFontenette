@@ -1,0 +1,45 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background: none;
+    position: relative;
+    z-index: 99;
+}
+
+.Header_Logo {
+    width: 15em;
+    cursor: pointer;
+    transition: all 750ms ease;
+}
+
+.Header_Items {
+    font-size: clamp(2rem, 4vw, 2rem);
+}
+
+.Header_Item {
+    padding: 1em;
+    text-decoration: none;
+    color: #252525;
+    font-weight: 600;
+    transition: all 250ms ease;
+}
+
+.Header_Logo:hover {
+    transform: scale(1.05);
+}
+
+.Header_Items:hover > .Header_Item {
+    opacity: 0.3;
+}
+
+.Header_Items:hover > .Header_Item:hover {
+    opacity: 1;
+    border-bottom: 5px solid #3185FC;
+    color: #3185FC;
+}
+
+.Header_Item.active {
+    color: #E84855;
+}

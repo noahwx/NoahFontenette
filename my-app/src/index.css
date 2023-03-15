@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/qet5luu.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "articulat-cf", sans-serif;
+  font-style: normal;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 0;
+  height: 85vh;
+}
