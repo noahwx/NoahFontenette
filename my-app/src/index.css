@@ -54,22 +54,21 @@
   .mobile-menu {
     display: flex;
     justify-content: space-around;
-    position: relative;
-    z-index: 0;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .menu-btn {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 40rem;
+    top: 50rem;
     z-index: 99;
-    height: 2rem;
+    overflow: hidden;
   }
 
   .mobile-btn {
-    height: 20rem;
+    height: 7rem;
     width: 20rem;
   }
 
