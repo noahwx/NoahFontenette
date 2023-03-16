@@ -10,5 +10,109 @@
 .wrapper {
   position: relative;
   z-index: 0;
-  height: 85vh;
+  height: 100vh;
+}
+
+.theme-btn {
+  position: fixed;
+  right: 1vh;
+  top: 1vh;
+  z-index: 99;
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  padding: 1em;
+  border: none;
+  outline: none;
+  transition: all 500ms ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+.theme-btn:active {
+  transform: scale(0.95);
+}
+
+.dark {
+  background-color: #151515;
+  color: #F5F3F6;
+}
+
+.light {
+  background-color: #F5F3F6;
+  color: #151515;
+}
+
+/* Navigation */
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  background: none;
+  position: relative;
+  z-index: 99;
+}
+
+.Header_Logo {
+  width: 15em;
+  cursor: pointer;
+  transition: all 750ms ease;
+}
+
+.Header_Items {
+  font-size: clamp(2rem, 4vw, 2rem);
+}
+
+.Header_Item {
+  padding: 1em;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  transition: all 250ms ease;
+}
+
+.Header_Logo:hover {
+  transform: scale(1.05);
+}
+
+.Header_Items:hover > .Header_Item {
+  opacity: 0.3;
+}
+
+.Header_Items:hover > .Header_Item:hover {
+  opacity: 1;
+  color: #FB3640;
+}
+
+.Header_Item.active {
+  border-bottom: 5px solid #FB3640;
+}
+
+/* Home */
+
+.grid-col-3 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box1 {
+  background-color: #FB3640;
+  height: 50vh;
+  width: 25vw;
+}
+
+.box2 {
+  background-color: #FB3640;
+  height: 25vh;
+  width: 40vw;
+}
+
+.box3 {
+  background-color: #FB3640;
+  height: 30vh;
+  width: 50vw;
 }
