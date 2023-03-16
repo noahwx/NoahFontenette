@@ -1,13 +1,47 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import logo from './logo.svg';
+import './index.css';
 
 const Home = () => {
 
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(!open);
+    };
+
+    const handleMenuOne = () => {
+        setOpen(false);
+    };
+    
+    const handleMenuTwo = () => {
+        setOpen(false);
+    };
+
+    const handleMenuThree = () => {
+        setOpen(false);
+    };
+
     return (
-        <div className="wrapper">
-            <div className="grid-col-3">
-                <div className="box1">Hello</div>
-                <div className="box2">World</div>
-                <div className="box3">OHHH</div>
+        <div>
+
+            <div className="mobile-wrapper">
+                <div className='mobile-menu'>
+                    <div className='menu-btn'>
+                        <img src={logo} alt='' onClick={handleOpen} className='mobile-btn'/>
+                    </div>
+
+                    {open ? (
+                        <div className='mobile-Nav'>
+                            <div className='mobile-NavItems'>
+                                <NavLink to='/' className='mobile-NavItem' onClick={handleMenuOne}>Home</NavLink>
+                                <NavLink to='/Projects' className='mobile-NavItem' onClick={handleMenuTwo}>Projects</NavLink>
+                                <NavLink to='/Contact' className='mobile-NavItem' onClick={handleMenuThree}>Contact</NavLink>
+                            </div>
+                        </div>
+                    ) : null}
+                </div>
             </div>
         </div>
      );

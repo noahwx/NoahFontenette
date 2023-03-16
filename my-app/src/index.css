@@ -7,112 +7,74 @@
   font-style: normal;
 }
 
-.wrapper {
-  position: relative;
-  z-index: 0;
-  height: 100vh;
-}
-
-.theme-btn {
-  position: fixed;
-  right: 1vh;
-  top: 1vh;
-  z-index: 99;
-  height: 3em;
-  width: 3em;
-  border-radius: 100%;
-  padding: 1em;
-  border: none;
-  outline: none;
-  transition: all 500ms ease;
-}
-
-.theme-btn:hover {
-  transform: scale(1.05);
-}
-
-.theme-btn:active {
-  transform: scale(0.95);
+:root {
+  --text: #151515;
+  --text1: #f5f5f5;
+  --bg: #f5f5f5;
+  --bg1: #151515;
 }
 
 .dark {
-  background-color: #151515;
-  color: #F5F3F6;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .light {
-  background-color: #F5F3F6;
-  color: #151515;
+  background-color: var(--bg1);
+  color: var(--text1);
 }
 
-/* Navigation */
-.Header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 15vh;
-  background: none;
-  position: relative;
-  z-index: 99;
+.mobile-wrapper {
+  visibility: hidden;
 }
 
-.Header_Logo {
-  width: 15em;
-  cursor: pointer;
-  transition: all 750ms ease;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #151515;
+    --text1: #f5f5f5;
+    --bg: #f5f5f5;
+    --bg1: #151515;
+  }
 }
 
-.Header_Items {
-  font-size: clamp(2rem, 4vw, 2rem);
-}
+@media only screen and (max-width: 700px) {
+  .mobile-wrapper {
+    visibility: visible;
+  }
 
-.Header_Item {
-  padding: 1em;
-  text-decoration: none;
-  color: inherit;
-  font-weight: 600;
-  transition: all 250ms ease;
-}
 
-.Header_Logo:hover {
-  transform: scale(1.05);
-}
+  .Header {
+    display: none;
+  }
 
-.Header_Items:hover > .Header_Item {
-  opacity: 0.3;
-}
+  .theme-btn {
+    display: none;
+  }
 
-.Header_Items:hover > .Header_Item:hover {
-  opacity: 1;
-  color: #FB3640;
-}
+  .mobile-menu {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+  }
 
-.Header_Item.active {
-  border-bottom: 5px solid #FB3640;
-}
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40rem;
+    z-index: 99;
+    height: 2rem;
+  }
 
-/* Home */
+  .mobile-btn {
+    height: 20rem;
+    width: 20rem;
+  }
 
-.grid-col-3 {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.box1 {
-  background-color: #FB3640;
-  height: 50vh;
-  width: 25vw;
-}
-
-.box2 {
-  background-color: #FB3640;
-  height: 25vh;
-  width: 40vw;
-}
-
-.box3 {
-  background-color: #FB3640;
-  height: 30vh;
-  width: 50vw;
+  .mobil-Nav {
+    display: flex;
+    justify-content: center;
+  }
 }
