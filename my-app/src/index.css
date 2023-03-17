@@ -84,6 +84,7 @@
     max-width: 25rem;
     text-align: center;
     border-radius: 5rem;
+    animation: mobileNav 1s linear;
   }
 
   .mobile-NavItems {
@@ -96,5 +97,16 @@
     padding: 1rem;
     color: var(--text);
     text-decoration: none;
+  }
+
+  @keyframes mobileNav {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }
