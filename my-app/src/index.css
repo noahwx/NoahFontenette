@@ -234,6 +234,6 @@
     color: inherit;
     font-weight: 400;
     word-wrap: break-word;
-    animation: openAppear 1s linear;
+    animation: openAppear 500ms linear;
   }
 }
