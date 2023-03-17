@@ -72,6 +72,7 @@
     width: 4em;
     height: 2em;
     font-size: clamp(1.2rem, 2vw, 1.2rem);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
   }
 
   .mobile-menu {
@@ -108,6 +109,7 @@
     max-width: 25rem;
     text-align: center;
     border-radius: 5rem;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
     animation: mobileNav 250ms linear;
   }
 
