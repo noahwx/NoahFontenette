@@ -58,6 +58,7 @@
   .mobile-theme-btn {
     position: absolute;
     top: 0;
+    left: -3em;
     z-index: 99;
     margin-top: 1rem;
     margin-left: 1rem;

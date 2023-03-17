@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import './index.css';
 
-// Version 0.0.751
+// Version 0.0.752
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
     <>
       <div className={`App ${theme}`}>
         <button onClick={toggleTheme} className='theme-btn'>Toggle Theme</button>
-        <button onClick={toggleTheme} className='mobile-theme-btn'>Theme</button>
+        <button onClick={toggleTheme} className='mobile-theme-btn'></button>
         <Header />
         <Main />
       </div>
