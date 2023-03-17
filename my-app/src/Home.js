@@ -39,6 +39,7 @@ const Home = () => {
                 </div>
                 <div>
                     <div className='mobile-menu'>
+                        <h4 className="mobile-btn-etcs">Menu</h4>
                         <div className='menu-btn'>
                             <img src={logo} alt='' onClick={handleOpen} className='mobile-btn'/>
                         </div>

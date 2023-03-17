@@ -57,7 +57,6 @@
 
   .mobile-theme-btn {
     position: absolute;
-    z-index: 99;
     top: 0;
     z-index: 99;
     margin-top: 1rem;
@@ -90,15 +89,27 @@
     top: 38rem;
     z-index: 99;
     overflow: hidden;
-    animation-name: mobileSlide, btnBounce;
-    animation-duration: 650ms, 500ms;
-    animation-iteration-count: 1, 1;
-    animation-delay: 0s, 3s;
+    animation-name: mobileSlide;
+    animation-duration: 650ms;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
   }
 
   .mobile-btn {
     height: 7rem;
     width: 20rem;
+  }
+
+  .mobile-btn-etcs {
+    position: absolute;
+    top: 38rem;
+    font-size: clamp(1rem, 2vw, 1rem);
+    font-weight: 400;
+    animation-name: mobileETC;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    opacity: 0;
   }
 
   .mobile-Nav {
@@ -174,15 +185,25 @@
     }
   }
 
-  @keyframes btnBounce {
+  @keyframes mobileETC {
     0% {
-      transform: scale(1);
+      opacity: 0;
+      transform: translateY(200%);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(0);
     }
     50% {
-      transform: scale(1.1);
+      opacity: 1;
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(0);
     }
     100% {
-      transform: scale(1);
+      opacity: 0;
+      transform: translateY(200%);
     }
   }
 
