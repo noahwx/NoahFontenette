@@ -42,7 +42,11 @@ const Home = () => {
 
             <div className="mobile-wrapper">
                 <div className="mobile-container">
-                    
+                    <div className="mobile-content">
+                        <h1 className="mobile-content-title">Noah Fontenette</h1>
+                        <hr/>
+                        <p className="mobile-content-subtitle">Analyst & Developer</p>
+                    </div>
                 </div>
                 <div className={`App ${theme}`}>
                     <div className='mobile-menu'>
