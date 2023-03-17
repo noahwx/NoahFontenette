@@ -40,6 +40,7 @@
 @media only screen and (max-width: 700px) {
   .mobile-wrapper {
     visibility: visible;
+    animation: mobileSlide 500ms linear;
   }
 
 
@@ -139,6 +140,19 @@
       transform: scale(1);
       opacity: 1;
       overflow: hidden;
+    }
+  }
+
+  @keyframes mobileSlide {
+    0% {
+      transform: translateY(200%);
+      opacity: 0;
+      filter: blur(200px);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      filter: blur(0);
     }
   }
 }
