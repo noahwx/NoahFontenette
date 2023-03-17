@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import MailToBtn from "./components/MailToBtn";
 import logo from './logo.svg';
 
 const Contact = () => {
@@ -30,6 +31,11 @@ const Contact = () => {
                 <div className="mobile-container">
                     <div className="mobile-content2">
                         <h1 className="mobile-content-title">Ways to Contact</h1>
+                        <div className="mobile-contact-container">
+                            <MailToBtn label="E-Mail" mailto="mailto:noahfontenette@outlook.com" />
+                            <a href="https://twitter.com/noahf97" className="mobile-contact-item" target="_blank" rel="noopener noreferrer">Twitter</a> 
+                            <a href="https://www.instagram.com/noahf.97/" className="mobile-contact-item" target="_blank" rel="noopener noreferrer">Instagram</a> 
+                        </div>
                     </div>
                 </div>
                 <div>

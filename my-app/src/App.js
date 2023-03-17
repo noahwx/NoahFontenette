@@ -4,7 +4,7 @@ import Main from './components/Main';
 import './index.css';
 import DarkMode from './dark-mode.png';
 
-// Version 0.0.754
+// Version 0.0.800
 
 function App() {
 
