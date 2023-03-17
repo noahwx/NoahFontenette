@@ -89,19 +89,6 @@
     animation: mobileNav 250ms linear;
   }
 
-  .mobile-Nav.light-theme {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: var(--bg1);
-    position: absolute;
-    bottom: 6rem;
-    max-width: 25rem;
-    text-align: center;
-    border-radius: 5rem;
-    animation: mobileNav 250ms linear;
-  }
-
   .mobile-NavItems {
     max-height: 35vh;
   }
