@@ -28,8 +28,8 @@ const Projects = () => {
 
             <div className="mobile-wrapper">
                 <div className="mobile-container">
-                    <div className="mobile-content">
-                        <h1 className="mobile-content-title">Projects</h1>
+                    <div className="mobile-content1">
+                        <h1 className="mobile-content-title1">Projects</h1>
                     </div>
                 </div>
                 <div>

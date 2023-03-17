@@ -28,7 +28,7 @@ const Contact = () => {
 
             <div className="mobile-wrapper">
                 <div className="mobile-container">
-                    <div className="mobile-content">
+                    <div className="mobile-content2">
                         <h1 className="mobile-content-title">Ways to Contact</h1>
                     </div>
                 </div>

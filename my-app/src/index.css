@@ -219,6 +219,20 @@
     text-align: center;
   }
 
+  .mobile-content1 {
+    position: absolute;
+    top: 1rem;
+    left: 9rem;
+    text-align: center;
+  }
+
+  .mobile-content2 {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+    text-align: center;
+  }
+
   .mobile-content-title {
     font-size: clamp(2rem, 4vw, 2rem);
     animation: openAppear 250ms linear;
