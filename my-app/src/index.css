@@ -78,7 +78,7 @@
 
   .mobile-theme-btn img {
     position: absolute;
-    top: 0.1rem;
+    top: 0.15rem;
     width: 30%;
     color: var(--bg2);
   }
