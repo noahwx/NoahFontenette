@@ -40,7 +40,6 @@
 @media only screen and (max-width: 700px) {
   .mobile-wrapper {
     visibility: visible;
-    animation: mobileSlide 500ms linear;
   }
 
 
@@ -68,6 +67,7 @@
     top: 38rem;
     z-index: 99;
     overflow: hidden;
+    animation: mobileSlide 750ms linear;
   }
 
   .mobile-btn {
@@ -147,7 +147,7 @@
     0% {
       transform: translateY(200%);
       opacity: 0;
-      filter: blur(200px);
+      filter: blur(100px);
     }
     100% {
       transform: translateY(0);
