@@ -59,7 +59,7 @@
     display: block;
     position: absolute;
     top: 0;
-    left: -2em;
+    left: -1em;
     z-index: 99;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -69,7 +69,7 @@
     border: none;
     cursor: pointer;
     border-radius: 2em;
-    width: 4em;
+    width: 6em;
     height: 2em;
     font-size: clamp(1.2rem, 2vw, 1.2rem);
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
@@ -78,8 +78,8 @@
 
   .mobile-theme-btn img {
     position: absolute;
-    top: 0.3rem;
-    width: 35%;
+    top: 0.1rem;
+    width: 30%;
     color: var(--bg2);
   }
 
