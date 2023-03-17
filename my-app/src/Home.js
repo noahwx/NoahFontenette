@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from './logo.svg';
 import './index.css';
@@ -23,20 +23,6 @@ const Home = () => {
         setOpen(false);
     };
 
-    const [theme, setTheme] = useState('light');
-    const toggleTheme = () => {
-      if (theme === 'light') {
-          setTheme('dark');
-      } else {
-          setTheme('light');
-      }
-    };
-
-    useEffect(() => {
-      localStorage.setItem('theme', theme);
-      document.body.className = theme;
-    }, [theme]);
-
     return (
         <div>
 
@@ -48,7 +34,7 @@ const Home = () => {
                         <p className="mobile-content-subtitle">Analyst & Developer</p>
                     </div>
                 </div>
-                <div className={`App ${theme}`}>
+                <div>
                     <div className='mobile-menu'>
                         <div className='menu-btn'>
                             <img src={logo} alt='' onClick={handleOpen} className='mobile-btn'/>
@@ -60,7 +46,6 @@ const Home = () => {
                                     <NavLink to='/' className='mobile-NavItem' onClick={handleMenuOne}>Home</NavLink>
                                     <NavLink to='/Projects' className='mobile-NavItem' onClick={handleMenuTwo}>Projects</NavLink>
                                     <NavLink to='/Contact' className='mobile-NavItem' onClick={handleMenuThree}>Contact</NavLink>
-                                    <NavLink onClick={toggleTheme} className='mobile-NavItem'>Toggle Theme</NavLink>
                                 </div>
                             </div>
                         ) : null}

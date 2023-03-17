@@ -9,31 +9,35 @@
 
 :root {
   --text: #151515;
-  --text1: #f5f5f5;
   --bg: #f5f5f5;
-  --bg1: #151515;
+  --bg2: #151515;
+  --text1: #f5f5f5;
 }
 
 .dark {
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: var(--bg2);
+  color: var(--text1);
 }
 
 .light {
-  background-color: var(--bg1);
-  color: var(--text1);
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .mobile-wrapper {
   visibility: hidden;
 }
 
+.mobile-theme-btn {
+  visibility: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #151515;
-    --text1: #f5f5f5;
     --bg: #f5f5f5;
-    --bg1: #151515;
+    --bg2: #151515;
+    --text1: #f5f5f5;
   }
 }
 
@@ -50,6 +54,22 @@
 
   .theme-btn {
     display: none;
+  }
+
+  .mobile-theme-btn {
+    position: absolute;
+    bottom: 15.5rem;
+    z-index: 99;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    visibility: visible;
+    background-color: var(--bg);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2em;
+    width: 4em;
+    height: 2em;
   }
 
   .mobile-menu {
@@ -107,7 +127,7 @@
     position: relative;
     float: left;
     padding: 1rem;
-    color: var(--text1);
+    color: var(--text);
     text-decoration: none;
     font-size: clamp(1rem, 2vw, 1rem);
     font-weight: 600;

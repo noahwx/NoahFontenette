@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import './index.css';
 
-// Version 0.0.518
+// Version 0.0.520
 
 function App() {
 
@@ -19,11 +19,13 @@ function App() {
       localStorage.setItem('theme', theme);
       document.body.className = theme;
   }, [theme]);
+  
 
   return (
     <>
       <div className={`App ${theme}`}>
         <button onClick={toggleTheme} className='theme-btn'>Toggle Theme</button>
+        <button onClick={toggleTheme} className='mobile-theme-btn'>Theme</button>
         <Header />
         <Main />
       </div>
