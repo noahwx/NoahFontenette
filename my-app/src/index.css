@@ -56,6 +56,8 @@
     justify-content: space-around;
     margin: 0 auto;
     overflow: hidden;
+    margin-top: 50vh;
+    height: 25vh;
   }
 
   .menu-btn {
@@ -72,8 +74,26 @@
     width: 20rem;
   }
 
-  .mobil-Nav {
+  .mobile-Nav {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    background-color: var(--bg);
+    position: absolute;
+    bottom: 5rem;
+    width: 25rem;
+    text-align: center;
+  }
+
+  .mobile-NavItems {
+    height: 35vh;
+  }
+
+  .mobile-NavItem {
+    position: relative;
+    float: left;
+    padding: 1rem;
+    color: var(--text);
+    text-decoration: none;
   }
 }
