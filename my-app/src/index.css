@@ -25,11 +25,11 @@
 }
 
 .mobile-wrapper {
-  visibility: hidden;
+  display: none;
 }
 
 .mobile-theme-btn {
-  visibility: hidden;
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 700px) {
   .mobile-wrapper {
-    visibility: visible;
+    display: contents;
     animation: openAppear 1s linear;
   }
 
@@ -56,9 +56,10 @@
   }
 
   .mobile-theme-btn {
+    display: block;
     position: absolute;
     top: 0;
-    left: -3em;
+    left: -2em;
     z-index: 99;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -73,6 +74,13 @@
     font-size: clamp(1.2rem, 2vw, 1.2rem);
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
     color: #151515;
+  }
+
+  .mobile-theme-btn img {
+    position: absolute;
+    top: 0.3rem;
+    width: 35%;
+    color: var(--bg2);
   }
 
   .mobile-menu {

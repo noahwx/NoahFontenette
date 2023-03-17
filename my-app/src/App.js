@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import './index.css';
+import DarkMode from './dark-mode.png';
 
-// Version 0.0.752
+// Version 0.0.753
 
 function App() {
 
@@ -25,7 +26,9 @@ function App() {
     <>
       <div className={`App ${theme}`}>
         <button onClick={toggleTheme} className='theme-btn'>Toggle Theme</button>
-        <button onClick={toggleTheme} className='mobile-theme-btn'></button>
+        <button onClick={toggleTheme} className='mobile-theme-btn'>
+          <img src={DarkMode} alt=''/>
+        </button>
         <Header />
         <Main />
       </div>
