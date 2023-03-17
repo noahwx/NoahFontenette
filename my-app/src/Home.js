@@ -41,6 +41,9 @@ const Home = () => {
         <div>
 
             <div className="mobile-wrapper">
+                <div className="mobile-container">
+                    
+                </div>
                 <div className={`App ${theme}`}>
                     <div className='mobile-menu'>
                         <div className='menu-btn'>
