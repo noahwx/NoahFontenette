@@ -58,7 +58,7 @@
 
   .mobile-theme-btn {
     position: absolute;
-    bottom: 5rem;
+    bottom: 4.5rem;
     z-index: 99;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -70,6 +70,7 @@
     border-radius: 2em;
     width: 4em;
     height: 2em;
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
   }
 
   .mobile-menu {
