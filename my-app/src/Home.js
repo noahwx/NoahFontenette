@@ -30,8 +30,11 @@ const Home = () => {
                 <div className="mobile-container">
                     <div className="mobile-content">
                         <h1 className="mobile-content-title">Noah Fontenette</h1>
-                        <hr/>
+                        <hr className="hr-home"/>
                         <p className="mobile-content-subtitle">Analyst & Developer</p>
+                    </div>
+                    <div className="mobile-about-me">
+                        <p className="mobile-about-p">Hi, there. I am an experienced Data Analyst and Front End Developer who focuses on new and innovative ways to accomplish a task.</p>
                     </div>
                 </div>
                 <div>
