@@ -25,6 +25,12 @@ const Home = () => {
 
     return (
         <div>
+            <div className="Desktop-wrapper">
+                <div className="Home-Info">
+                    <h1 className="Desktop-Title">Noah Fontenette</h1>
+                    <p className="Desktop-Subtitle">Hi, there. I am an experienced Data Analyst and Front End Developer who focuses on new and innovative ways to accomplish a task.</p>
+                </div>
+            </div>
 
             <div className="mobile-wrapper">
                 <div className="mobile-container">

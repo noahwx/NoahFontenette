@@ -1,3 +1,5 @@
+/* Global CSS */
+
 @import url("https://use.typekit.net/qet5luu.css");
 
 * {
@@ -23,6 +25,72 @@
   background-color: var(--bg);
   color: var(--text);
 }
+
+/* Desktop CSS */
+
+.theme-btn {
+  position: absolute;
+  top: 90vh;
+  z-index: 99;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Header_Logo {
+  width: 10%;
+  cursor: pointer;
+  transition: transform 250ms ease;
+}
+
+.Header_Items {
+  font-size: clamp(2rem, 4vw, 2rem);
+  font-weight: 600;
+}
+
+.Header_Item {
+  color: inherit;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.Header_Logo:hover {
+  transform: scale(1.05);
+}
+
+.Header_Item.active {
+  color: #FB3640;
+}
+
+.Desktop-Title {
+  font-size: clamp(4rem, 8vw, 4rem);
+  font-weight: 700;
+  color: inherit;
+  text-align: left;
+}
+
+.Desktop-Subtitle {
+  font-size: clamp(1.3rem, 2vw, 1.3rem);
+  font-weight: 400;
+  color: inherit;
+  text-align: left;
+}
+
+.Home-Info {
+  display: block;
+  justify-content: left;
+  position: absolute;
+  top: 25em;
+  left: 10em;
+}
+
+/* Mobile CSS */
 
 .mobile-wrapper {
   display: none;
@@ -52,6 +120,10 @@
   }
 
   .theme-btn {
+    display: none;
+  }
+
+  .Desktop-wrapper {
     display: none;
   }
 

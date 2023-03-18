@@ -23,8 +23,10 @@ const Projects = () => {
     };
 
     return ( 
-        <div className="wrapper">
-
+        <div>
+            <div className="Desktop-wrapper">
+                <h1>Projects</h1>
+            </div>
 
             <div className="mobile-wrapper">
                 <div className="mobile-container">
