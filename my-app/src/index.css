@@ -74,6 +74,7 @@
     font-size: clamp(1.2rem, 2vw, 1.2rem);
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
     color: #151515;
+    animation: btnSlide 500ms linear;
   }
 
   .mobile-theme-btn img {
@@ -81,6 +82,17 @@
     top: 0.15rem;
     width: 30%;
     color: var(--bg2);
+  }
+
+  @keyframes btnSlide {
+    0% {
+      opacity: 0;
+      transform: translateX(-200%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .mobile-menu {
