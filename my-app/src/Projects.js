@@ -31,6 +31,12 @@ const Projects = () => {
                     <div className="mobile-content1">
                         <h1 className="mobile-content-title1">Projects</h1>
                     </div>
+                    <div className="mobile-project-container">
+                        <div className="mobile-project"></div>
+                        <div className="mobile-project"></div>
+                        <div className="mobile-project"></div>
+                        <div className="mobile-project"></div>
+                    </div>
                 </div>
                 <div>
                     <div className='mobile-menu'>
