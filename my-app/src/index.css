@@ -29,9 +29,41 @@
 /* Desktop CSS */
 
 .theme-btn {
+  display: block;
   position: absolute;
-  top: 90vh;
+  top: 10em;
+  left: -4em;
   z-index: 99;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: var(--bg);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2em;
+  width: 6em;
+  height: 4em;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+  color: #151515;
+  animation: btnSlide 500ms linear;
+}
+
+.theme-btn img {
+  position: absolute;
+  top: 0.5rem;
+  width: 40%;
+  color: var(--bg2);
+}
+
+@keyframes btnSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .Header {
@@ -40,13 +72,14 @@
   align-items: center;
   position: relative;
   z-index: 99;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   animation: desktopAppear 1s linear;
 }
 
 .Header_Logo {
   width: 10%;
   cursor: pointer;
+  filter: drop-shadow( 1px 3px 10px rgba(0, 0, 0, .4));
   transition: transform 250ms ease;
 }
 
@@ -59,6 +92,7 @@
   color: inherit;
   padding: 1em;
   text-decoration: none;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .Header_Logo:hover {
@@ -67,6 +101,10 @@
 
 .Header_Item.active {
   color: #FB3640;
+}
+
+.Desktop-wrapper {
+  overflow: hidden;
 }
 
 .Desktop-Title {
@@ -84,6 +122,7 @@
   font-weight: 700;
   color: inherit;
   text-align: left;
+  animation: desktopAppear 1s linear;
 }
 
 .Desktop-Subtitle {
@@ -100,6 +139,8 @@
   position: absolute;
   top: 25em;
   left: 10em;
+  z-index: 99;
+  padding: 1em;
 }
 
 @keyframes desktopAppear {
@@ -111,7 +152,33 @@
   }
 }
 
+.Desktop-Contact-Container {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: 0.3em;
+  left: 43em;
+  width: 10em;
+  animation: desktopAppear 1s linear;
+}
+
+.desktop-contact-item {
+  position: relative;
+  float: left;
+  text-align: left;
+  font-size: clamp(2rem, 4vw, 2rem);
+  color: inherit;
+  text-decoration: none;
+}
+
+.desktop-contact-item:hover {
+  text-decoration: underline;
+}
+
 /* Mobile CSS */
+.mobile-contact-item {
+  display: none;
+}
 
 .mobile-wrapper {
   display: none;
@@ -145,6 +212,10 @@
   }
 
   .Desktop-wrapper {
+    display: none;
+  }
+
+  .desktop-contact-item {
     display: none;
   }
 

@@ -4,7 +4,7 @@ import Main from './components/Main';
 import './index.css';
 import DarkMode from './dark-mode.png';
 
-// Version 0.0.910
+// Version 0.1.000
 
 function App() {
 
@@ -25,7 +25,9 @@ function App() {
   return (
     <>
       <div className={`App ${theme}`}>
-        <button onClick={toggleTheme} className='theme-btn'>Toggle Theme</button>
+        <button onClick={toggleTheme} className='theme-btn'>
+          <img src={DarkMode} alt=''/>
+        </button>
         <button onClick={toggleTheme} className='mobile-theme-btn'>
           <img src={DarkMode} alt=''/>
         </button>

@@ -26,7 +26,12 @@ const Contact = () => {
     return ( 
         <div>
             <div className="Desktop-wrapper">
-                <h1 className="Desktop-Title1">Contact</h1>
+                <h1 className="Desktop-Title1">Ways to Contact Me</h1>
+                <div className="Desktop-Contact-Container">
+                    <MailToBtn label="E-Mail" mailto="mailto:noahfontenette@outlook.com" />
+                    <a href="https://twitter.com/noahf97" className="desktop-contact-item" target="_blank" rel="noopener noreferrer">Twitter</a> 
+                    <a href="https://www.instagram.com/noahf.97/" className="desktop-contact-item" target="_blank" rel="noopener noreferrer">Instagram</a> 
+                </div>
             </div>
 
             <div className="mobile-wrapper">

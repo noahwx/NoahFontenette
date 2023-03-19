@@ -28,7 +28,8 @@ const Home = () => {
             <div className="Desktop-wrapper">
                 <div className="Home-Info">
                     <h1 className="Desktop-Title">Noah Fontenette</h1>
-                    <p className="Desktop-Subtitle">Hi, there. I am an experienced Data Analyst and Front End Developer who focuses on new and innovative ways to accomplish a task.</p>
+                    <hr/>
+                    <p className="Desktop-Subtitle">Hi, there. I am an experienced <strong>Data Analyst</strong> and <strong>Front End Developer</strong> who focuses on new and innovative ways to accomplish a task.</p>
                 </div>
             </div>
 
