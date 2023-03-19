@@ -29,7 +29,9 @@ const Home = () => {
                 <div className="Home-Info">
                     <h1 className="Desktop-Title">Noah Fontenette</h1>
                     <hr/>
-                    <p className="Desktop-Subtitle">Hi, there. I am an experienced <strong>Data Analyst</strong> and <strong>Front End Developer</strong> who focuses on new and innovative ways to accomplish a task.</p>
+                    <p className="Desktop-Subtitle">
+                        Hi, I'm Noah Fontenette, a web developer and data analyst with five years of experience.<br/>I'm proficient in <strong>HTML, CSS, JavaScript, Python, and Excel</strong>.<br/>I also enjoy staying up to date with the latest web development trends and data analysis techniques.
+                    </p>
                 </div>
             </div>
 
